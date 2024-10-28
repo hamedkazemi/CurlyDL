@@ -1,6 +1,6 @@
-# curlyDL
+# curlydl
 
-A robust, feature-rich download manager for Python with support for parallel downloads, speed limiting, and progress tracking.
+WIP: A robust, feature-rich download manager for Python with support for parallel downloads, speed limiting, and progress tracking.
 
 ## Features
 
@@ -57,13 +57,13 @@ Windows users need to install the appropriate version of libcurl. We recommend u
 
 Install using pip:
 ```bash
-pip install curlyDL
+pip install curlydl
 ```
 
 ## Quick Start
 
 ```python
-from curlyDL import DownloadManager
+from curlydl import DownloadManager
 
 # Initialize download manager
 manager = DownloadManager()
@@ -87,7 +87,7 @@ manager.start_download(
 ### Basic Usage
 
 ```python
-from curlyDL import DownloadManager
+from curlydl import DownloadManager
 
 # Initialize download manager
 manager = DownloadManager(max_workers=4)
@@ -110,7 +110,7 @@ is_complete = manager.is_complete(download_id)
 
 1. Priority-based Queue:
 ```python
-from curlyDL import DownloadQueue, DownloadItem, Priority
+from curlydl import DownloadQueue, DownloadItem, Priority
 
 queue = DownloadQueue(max_concurrent=2)
 
@@ -132,7 +132,7 @@ queue.add(DownloadItem(
 
 2. Progress Tracking:
 ```python
-from curlyDL import DownloadManager
+from curlydl import DownloadManager
 
 manager = DownloadManager()
 download_id = manager.start_download(
@@ -151,7 +151,7 @@ while not manager.is_complete(download_id):
 
 1. Downloading Multiple Files with Different Priorities:
 ```python
-from curlyDL import DownloadQueue, DownloadItem, Priority
+from curlydl import DownloadQueue, DownloadItem, Priority
 
 queue = DownloadQueue(max_concurrent=2)
 
@@ -183,7 +183,7 @@ queue.process_queue()
 
 2. Download with Progress Callback:
 ```python
-from curlyDL import DownloadManager
+from curlydl import DownloadManager
 
 def progress_callback(download_id, progress, speed):
     print(f"Download {download_id}: {progress:.1f}% ({speed/1024:.1f} KB/s)")
@@ -197,7 +197,7 @@ manager.start_download(
 
 3. Batch Download with Error Recovery:
 ```python
-from curlyDL import DownloadQueue, DownloadItem
+from curlydl import DownloadQueue, DownloadItem
 import os
 
 def download_batch(urls, output_dir):
@@ -232,7 +232,7 @@ When running downloads, you'll see detailed progress information:
 
 ## Error Handling
 
-curlyDL provides comprehensive error handling:
+curlydl provides comprehensive error handling:
 
 1. Automatic Retries:
 - Failed downloads are automatically retried with exponential backoff
@@ -275,7 +275,7 @@ max_speed = 100 * 1024  # 100 KB/s
 
 Enable debug mode for detailed logging:
 ```python
-from curlyDL import DownloadManager
+from curlydl import DownloadManager
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
