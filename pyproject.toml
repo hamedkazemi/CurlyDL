@@ -2,7 +2,7 @@
 name = "curlyDL"
 version = "0.1.0"
 description = "A Python Download Manager SDK using libcurl"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["Hamed Kazemi <kafa1942@gmail.com>"]
 packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
