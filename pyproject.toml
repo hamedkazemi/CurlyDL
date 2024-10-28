@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "curlydl"
-version = "0.2.0"
+version = "0.2.1"
 description = "A Python Download Manager SDK using libcurl"
 readme = "README.md"
 authors = ["Hamed Kazemi <kafa1942@gmail.com>"]
