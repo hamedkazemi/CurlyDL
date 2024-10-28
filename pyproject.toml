@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "curlyDL"
+version = "0.1.0"
+description = "A Python Download Manager SDK using libcurl"
+authors = ["Your Name <your.email@example.com>"]
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pycurl = "^7.45.0"
+tqdm = "^4.66.6"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
