@@ -37,6 +37,7 @@ ENV/
 .settings/
 
 # Testing
+collector.py
 .tox/
 .coverage
 .coverage.*
@@ -53,4 +54,5 @@ downloads/
 downloads_temp/
 downloads_metadata/
 *.log
-.history
+.history/
+.example/

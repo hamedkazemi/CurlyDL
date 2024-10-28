@@ -5,7 +5,7 @@ import unittest
 import json
 import shutil
 from pathlib import Path
-from datetime import datetime, UTC
+from datetime import datetime, timezone
 from src.metadata import MetadataManager
 
 class TestMetadataManager(unittest.TestCase):
