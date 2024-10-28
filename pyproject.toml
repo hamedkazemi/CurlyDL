@@ -1,9 +1,10 @@
 [tool.poetry]
 name = "curlyDL"
-version = "0.1.0"
+version = "0.1.3"
 description = "A Python Download Manager SDK using libcurl"
+readme = "README.md"
 authors = ["Hamed Kazemi <kafa1942@gmail.com>"]
-packages = [{include = "src"}]
+repository = "https://github.com/hamedkazemi/CurlyDL"
 
 [tool.poetry.dependencies]
 python = "^3.7"
