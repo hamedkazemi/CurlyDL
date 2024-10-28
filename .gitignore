@@ -53,3 +53,4 @@ downloads/
 downloads_temp/
 downloads_metadata/
 *.log
+.history
