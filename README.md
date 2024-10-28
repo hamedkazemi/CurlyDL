@@ -143,7 +143,8 @@ download_id = manager.start_download(
 # Monitor progress
 while not manager.is_complete(download_id):
     progress = manager.get_progress(download_id)
-    speed = manager.get_speed(download_id)
+    speed = manager.get_download_stats(download_id)
+    speed = speed['speed']['current_speed']
     print(f"Progress: {progress:.1f}% - Speed: {speed/1024:.1f} KB/s")
 ```
 
